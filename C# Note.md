@@ -96,7 +96,7 @@ namespace DataTypeApplication
 2. 引用类型  
 * object
 object可以被分配任何其他类型
-```
+```csharp
 object obj;
 obj = 100; // 值类型赋值给对象类型-装箱；对象类型转换为值类型-拆箱
 ```
