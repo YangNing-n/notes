@@ -248,3 +248,64 @@ namespace CalculatorApplication
     }
 }
 ```
+
+# 可空类型
+
+```
+int i; //默认值为0
+int? i; //默认值为null
+```
+nullable（可空类型）：变量取值为指定类型或null。  
+nullable赋值语法：`< data_type > ? < variable_name> = null;`
+
+# 数组
+
+数组是一个存储相同类型元素的固定大小的顺序集合。  
+1. 声明  
+数组声明语法：`datatype[] arrayName;`
+例如：`double[] balance;`
+2. 初始化  
+`double[] balance = new double[10];`  
+3. 赋值  
+* 通过索引赋值：  
+```
+double[] balance = new double[10];
+balance[0] = 4500.0;
+```
+* 声明索引时赋值：`double[] balance = { 2340.0, 4523.69, 3421.0};`
+* 声明、初始化并赋值：`int [] marks = new int[5]  { 99,  98, 92, 97, 95};`，此处可以省略数组大小：`int [] marks = new int[]  { 99,  98, 92, 97, 95};`  
+* 将一个数组赋值给另一个数组：  
+```
+int [] marks = new int[]  { 99,  98, 92, 97, 95};
+int[] score = marks;
+```
+4. 访问数组  
+```
+using System;
+namespace ArrayApplication
+{
+   class MyArray
+   {
+      static void Main(string[] args)
+      {
+         int []  n = new int[10]; /* n 是一个带有 10 个整数的数组 */
+         int i,j;
+
+
+         /* 初始化数组 n 中的元素 */        
+         for ( i = 0; i < 10; i++ )
+         {
+            n[ i ] = i + 100;
+         }
+
+         /* 输出每个数组元素的值 */
+         for (j = 0; j < 10; j++ )
+         {
+            Console.WriteLine("Element[{0}] = {1}", j, n[j]);
+         }
+         Console.ReadKey();
+      }
+   }
+}
+```
+
