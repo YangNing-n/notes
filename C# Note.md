@@ -150,14 +150,14 @@ C#支持的访问修饰符：
 
 1. 定义方法  
 语法：  
-```
+```csharp
 <访问修饰符> <返回类型> <Method Name>(Parameter List)
 {
    Method Body
 }
 ```
 定义方法实例：  
-```
+```csharp
 class NumberManipulator
 {
    public int FindMax(int num1, int num2)
@@ -176,7 +176,7 @@ class NumberManipulator
 }
 ```
 2. 调用方法  
-```
+```csharp
 using System;
 
 namespace CalculatorApplication
@@ -212,7 +212,7 @@ namespace CalculatorApplication
 }
 ```
 3. 递归调用
-```
+```csharp
 using System;
 
 namespace CalculatorApplication
@@ -251,7 +251,7 @@ namespace CalculatorApplication
 
 # 可空类型
 
-```
+```csharp
 int i; //默认值为0
 int? i; //默认值为null
 ```
@@ -268,19 +268,19 @@ nullable赋值语法：`< data_type > ? < variable_name> = null;`
 `double[] balance = new double[10];`  
 3. 赋值  
 * 通过索引赋值：  
-```
+```csharp
 double[] balance = new double[10];
 balance[0] = 4500.0;
 ```
 * 声明索引时赋值：`double[] balance = { 2340.0, 4523.69, 3421.0};`
 * 声明、初始化并赋值：`int [] marks = new int[5]  { 99,  98, 92, 97, 95};`，此处可以省略数组大小：`int [] marks = new int[]  { 99,  98, 92, 97, 95};`  
 * 将一个数组赋值给另一个数组：  
-```
+```csharp
 int [] marks = new int[]  { 99,  98, 92, 97, 95};
 int[] score = marks;
 ```
 4. 访问数组  
-```
+```csharp
 using System;
 namespace ArrayApplication
 {
